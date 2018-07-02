@@ -1,0 +1,23 @@
+###################Web Browser########################
+
+--> DOM (document object model) for HTML
+--> CSS interpreter for CSS
+--> JavaScript Engine for JS
+---------------->JIT<--------------------
+
+
+####################JavaScript########################
+NOTE:- JavaScript can be known as Scripting language, Object-Oriented
+Language or prototype based language, depending upon usage.
+
+->Provides Interactivity in webpages
+->UI can be easily managed
+->Events
+->and much more.
+
+1. ''''<script></script>'''' for on page Scripts
+2. ''''<script src="path/to/file"></script>'''' for external Scripts
+3. ''''.js'''' is extension for external js file
+4. no <script></script> tag in external js files
+5. <script> can be added to head as well as body tag
+6. case-sensitive
