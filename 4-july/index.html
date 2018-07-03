@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Regular Expressions</title>
+    <link rel="stylesheet" href="css/index.css"/>
+  </head>
+  <body>
+    <div class="main">
+      <div class="top">
+        <h3>Regular Expressions</h3>
+        <ul id="first">
+          <li>Defines Sequence of Characters</li>
+          <li>Simple patterns as well as complex patterns</li>
+          <li><strong>Syntax:</strong> /pattern/modifier</li>
+          <li><strong>Usage:</strong> /Akash/i</li>
+        </ul>
+        <h3>Modifiers</h3>
+        <ol id="second">
+          <li><span>i</span> --&gt; for case-insensitive</li>
+          <li><span>g</span> --&gt; for global match (all in one line)</li>
+          <li><span>m</span> --&gt; for multiline matching</li>
+        </ol>
+        <h3>Pattern Formats</h3>
+        <ol id="third">
+          <li><span>[axj]</span> --&gt; for any character in brackets</li>
+          <li><span>[A-Z]</span> --&gt; for specified range</li>
+          <li><span>(a|b)</span> --&gt; for alternatives</li>
+        </ol>
+        <h3>Methods</h3>
+        <ol id="fourth">
+          <li>
+            <ul class="fourth1">
+              <li><span>test()</span> --&gt; for checking pattern case (returns true/fasle)<li>
+              <li><span>Usage:</span> /a/i.test("string a")</li>
+            </ul>
+          </li>
+          <li>
+            <ul class="fourth1">
+              <li><span>exec()</span> --&gt; for checking pattern case (returns pattern)<li>
+              <li><span>Usage:</span> /a/i.exec("string a")</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+      <div class="bottom">
+        <h3>JSON - JavaScript object Notation</h3>
+        <ul>
+          <li><span>JSON.parse() -- converts a string into JSON object</span></li>
+          <li><span>JSON.stringify() -- converts JSON object to a string</span></li>
+          <li><span>arrays in JSON</span></li>
+        </ul>
+        <p>In JSON data is represented as <span>"name":"value"</span> pair.<br/>But in JavaScript it can be written as or defined as <span>name:"value"</span>.</p>
+      </div>
+      <div class="bottom2">
+        <h3>Cookies</h3>
+        <ul>
+          <li>Using JavaScript</li>
+          <li>Cookies are data, stored in small text files, on your computer.</li>
+          <li><span>Store data as name=value pair</span></li>
+          <li>Cookie can be Created as: <span>document.cookie = "name=Akash";</span></li>
+          <li>More parameters <span>document.cookie = "name=Akash; expires=tue 03 july 2018 16:00:00 UTC; path=/;";</span></li>
+          <li>Cookie can be retrieved as <span>var x = document.cookie;</span></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
