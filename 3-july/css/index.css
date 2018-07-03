@@ -46,6 +46,7 @@ img{
 p{
   text-align: justify;
   font-size: 1.4em;
+  font-weight: bolder;
 }
 @media (max-width:960px){
   .main{
