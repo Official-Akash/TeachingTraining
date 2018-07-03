@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="css/index.css">
     <script type="text/javascript" src="js/index.js"></script>
   </head>
+  <!--<body onload="window.alert('Hello Welcome');">-->
   <body>
     <div class="main">
+      <marquee>
+        <img src="images/1.jpg"/>
+        <img src="images/bg.jpg"/>
+        <img src="images/3.jpg"/>
+      </marquee>
       <h1>JavaScript Events Explained..</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -20,13 +26,13 @@
       <div class="topmain">
         <div class="imag">
           <figure>
-            <img src="images/1.jpg" alt="First Image"/>
+            <img src="images/1.jpg" alt="First Image" onclick="imagecaption();"/>
             <figcaption id="one">Mountains and Cloud</figcaption>
           </figure>
         </div>
         <div class="imag">
           <figure>
-            <img src="images/bg.jpg" alt="Second Image"/>
+            <img src="images/bg.jpg" alt="Second Image" onmouseover="thiscap();" onmouseout="remthiscap();"/>
             <figcaption id="two">Peace of woods</figcaption>
           </figure>
         </div>
@@ -37,6 +43,12 @@
           </figure>
         </div>
       </div>
+      <form>
+        <input type="radio" name="one" onchange="errr();" value="f" checked="checked">Female<br />
+        <input type="radio" name="one" value="m">Male<br />
+
+        <input type="text" name="two" onkeydown="err2();" value=""/>
+      </form>
     </div>
   </body>
 </html>
