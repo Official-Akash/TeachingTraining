@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <title>JavaScript Events</title>
     <link rel="stylesheet" href="css/index.css">
-    <script type="text/javascript" src="js/index.js"></script>
+
   </head>
   <!--<body onload="window.alert('Hello Welcome');">-->
   <body>
@@ -26,19 +26,21 @@
       <div class="topmain">
         <div class="imag">
           <figure>
-            <img src="images/1.jpg" alt="First Image" onclick="imagecaption();"/>
+            <!-- <img src="images/1.jpg" alt="First Image" onclick="imagecaption();"/> -->
+            <img src="images/1.jpg" alt="First Image" class="imgh"/>
             <figcaption id="one">Mountains and Cloud</figcaption>
           </figure>
         </div>
         <div class="imag">
           <figure>
-            <img src="images/bg.jpg" alt="Second Image" onmouseover="thiscap();" onmouseout="remthiscap();"/>
+            <!-- <img src="images/bg.jpg" alt="Second Image" class="imgh" onmouseover="thiscap();" onmouseout="remthiscap();"/> -->
+            <img src="images/bg.jpg" alt="Second Image" class="imgh"/>
             <figcaption id="two">Peace of woods</figcaption>
           </figure>
         </div>
         <div class="imag">
           <figure>
-            <img src="images/3.jpg" alt="Third Image"/>
+            <img src="images/3.jpg" class="imgh" alt="Third Image"/>
             <figcaption id="three">Friendship</figcaption>
           </figure>
         </div>
@@ -50,5 +52,6 @@
         <input type="text" name="two" onkeydown="err2();" value=""/>
       </form>
     </div>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
