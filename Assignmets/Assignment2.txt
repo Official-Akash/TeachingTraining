@@ -1,0 +1,14 @@
+So time for second assignment:-
+1.  Add three images in one line
+2. Add Audio without controls and autoplay
+3. Create a star using polygon svg tag
+4. Create table that displays student data and there would be two columns under name column as first name and last name, with table border 2
+5. Create a smiley using SVG
+6. Add quotes and cite them
+7. Add caption to a figure
+8. Add mailto functionality with subject and body of the mail
+
+Note:- do all in one file and name file as "assignment.html" and then add all related data and file to one zip file and name zip as "yourname-2.zip"
+And mail me till tomorrow morning 11 am.
+
+Do some self learning and if any doubt in any assignment point ask me here only

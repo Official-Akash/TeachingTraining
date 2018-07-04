@@ -1,0 +1,8 @@
+Assignment-5 is 
+1. Print star triangle using loops
+2. Factorial of a number using prompt
+3. Create a calculator using switch
+4. Add onchange event to select input type and display changed value in console.
+
+All this you have to done in javascript.
+Upload this as yourname-5 on github

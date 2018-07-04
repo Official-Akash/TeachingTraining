@@ -1,0 +1,33 @@
+Assignment6
+*Following is the JSON object:*
+var jsonarray = {
+	"teachers":[
+		{
+			"name":{
+				"firstname":"Akash",
+				"lastname":"Chouhan"
+			},
+			"location":{
+				"city":"Jalandhar",
+				"state":"Punjab",
+				"country":"India"
+			}
+		},
+		{
+			"name":{
+				"firstname":"Krishanan",
+				"lastname":"Moorthy"
+			},
+			"location":{
+				"city":"Chennai",
+				"state":"Tamil Nadu",
+				"country":"India"
+			}
+		}
+	]
+};
+*You have to print like:-*
+_Teacher1:- Akash Chouhan lives in Jalandhar, Punjab, India_
+_Teacher2:- Krishanan Moorthy lives in Chennai, Tamil Nadu, India_
+
+Upload to github till tomorrow 11am.
