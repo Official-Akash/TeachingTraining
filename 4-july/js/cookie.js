@@ -15,6 +15,8 @@ function createCookie(cname,cval,exp){
 //to get a Cookie
 function getCookie(cname){
   var name = cname + "=";
+  //var decodeCom = decodeURIComponent(document.cookie);
+  //var splitcookie = decodeCom.split(';');
   var splitcookie = document.cookie.split(';');
   for(var i = 0;i<splitcookie.length;i++){
     var splitpart = splitcookie[i];
@@ -26,4 +28,17 @@ function getCookie(cname){
     }
   }
   return "";
+}
+
+//to check and to create Cookie
+function checkCookie() {
+    var user=getCookie("username");
+    if (user != "") {
+        alert("Welcome again " + user);
+    } else {
+       user = prompt("Please enter your name:","");
+       if (user != "" && user != null) {
+           createCookie("username", user, 30);
+       }
+    }
 }
