@@ -18,7 +18,7 @@ function getCookie(cname){
   var splitcookie = document.cookie.split(';');
   for(var i = 0;i<splitcookie.length;i++){
     var splitpart = splitcookie[i];
-    while(splitpart.charAt(0) == ''){
+    while(splitpart.charAt(0) == ' '){
       splitpart = splitpart.substring(1);
     }
     if(splitpart.indexOf(name) == 0){
