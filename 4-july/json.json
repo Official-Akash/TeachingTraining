@@ -1,0 +1,24 @@
+{
+  "boys":[
+    {
+      "name":"Akash", "age":20
+    },
+    {
+      "name":"Rohit", "age":21
+    },
+    {
+      "name":"Jasleen", "age":19
+    }
+  ],
+  "girls":[
+    {
+      "name":"Amanpreet", "age":20
+    },
+    {
+      "name":"Manpreet", "age":21
+    },
+    {
+      "name":"Poornima", "age":19
+    }
+  ]
+}
