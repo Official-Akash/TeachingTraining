@@ -15,8 +15,10 @@ function createCookie(cname,cval,exp){
 //to get a Cookie
 function getCookie(cname){
   var name = cname + "=";
+  /*#################following code can also be used to parse URI components
   //var decodeCom = decodeURIComponent(document.cookie);
   //var splitcookie = decodeCom.split(';');
+  #########################################################################*/
   var splitcookie = document.cookie.split(';');
   for(var i = 0;i<splitcookie.length;i++){
     var splitpart = splitcookie[i];
