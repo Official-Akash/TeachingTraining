@@ -1,0 +1,11 @@
+Assignment7
+Print whether cookies are enabled in browser or not
+print name of browser
+print product name of browser engine
+print application code name
+print browser version
+print browser language
+
+Do it using JavaScript navigator only.. 
+
+submit by 10am tomorrow
