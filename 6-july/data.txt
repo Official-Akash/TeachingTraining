@@ -1,0 +1,2 @@
+Sample Data.
+This data will be displayed Once AJAX call is made.
