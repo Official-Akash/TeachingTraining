@@ -46,6 +46,20 @@ $(function(){
     // });
 
     //html()
-    console.log($(".main").html());
+    //$(".main").html("<a href=\"https://yahoo.in\">Yahoo</a>");
+
+    //val()
+    // var vala = $("input[name=q]").val();
+    // $("#para").text(vala);
+    // $("input[name=q]").val($("#para").text());
+    // console.log($("input[name=q]").val());
+
+    //attr()
+    // console.log($("input[name=q]").attr('id'));
+    // console.log($("input[name=q]").attr('id', "oldID"));
+
+    // data()
+    // console.log($("input[name=q]").data('id'));
+    // console.log($("input[name=q]").data('id', "oldID"));
   });
 });
