@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AJAX request</title>
+  </head>
+  <body>
+    <button onclick="loadData()">CLick me</button>
+    <p id="data"></p>
+    <script>
+    function loadData(){
+      var httpd = new XMLHttpRequest();
+      httpd.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+          document.getElementById("data").innerText = this.getAllResponseHeaders();
+        }
+      }
+      httpd.open("GET", "data.txt", true);
+      httpd.send();
+    }
+    </script>
+  </body>
+</html>
