@@ -3,7 +3,7 @@ html, body{
 }
 .main{
   width: 95%;
-  margin: 0 auto;
+  margin: 10px auto;
   border: 1px solid red;
   box-shadow: 2px 2px grey;
   padding: 10px;
@@ -12,11 +12,13 @@ h3 {
   text-align: center;
 }
 .parent{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 .options{
-  width:80px;
+  width: 94px;
+  margin: 1px;
   height: auto;
   padding: 15px;
   border: 1px solid black;
