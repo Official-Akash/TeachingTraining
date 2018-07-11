@@ -1,0 +1,13 @@
+*Assignment 8*
+*Q1:-* _Load data from a txt file using jQuery_
+*Q2:-* _Center Align The text of following code horizontally and Vertically using CSS_
+*CODE*
+<div class="banner">
+	<div class="centerme">
+		Hello World!
+	</div>
+</div>
+*Q3:-* _Print Fibonacci series upto 15 numbers in PHP_
+*Q4:-* _Design an About Us page using HTML, CSS (or JavaScript, jQuery) and this page must contain images and text as well_
+
+*_Submit all work till 11am tomorrow_*
