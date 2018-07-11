@@ -16,11 +16,28 @@
         <div class="options">$.post()</div>
       </div>
     </div>
-    <div class="main dataTshw"></div>
-    <button type="button" name="buton">Click to load</button>
-    <script>
-    $(function(){
+    <div class="main">
+      <div class="dataTshw">
 
+      </div>
+      <button type="button" name="buton">Click to load</button>
+    </div>
+    <script>
+    //var jQ = $.noConflict();
+    $(function(){
+      $('button').click(function(){
+        // $('.dataTshw').load('data.txt', function(responseTxt, statusTxt, xhr){
+        //   console.log(xhr.statusText +" "+ responseTxt+" "+statusTxt);
+        // });
+        // $.get("data.txt", function(data, status){
+        //   console.log(data+" "+status);
+        //   $('.dataTshw').text(data);
+        // });
+        // $.post("data.txt", {name:"akash"}, function(data, status){
+        //   console.log(data+" "+status);
+        //   $('.dataTshw').text(data);
+        // });
+      });
     });
     </script>
   </body>
