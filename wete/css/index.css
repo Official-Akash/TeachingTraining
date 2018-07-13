@@ -1,0 +1,33 @@
+body,html{
+    margin:0;
+    padding: 0;
+    background-color: rgba(73, 111, 72, 0.08);
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.containerMain{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+p{
+    line-height: 30px;
+    font-size: large;
+    font-family: Arial;
+    text-align: justify;
+}
+.rowMain{
+    background: url("../images/two.jpg") no-repeat center;
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.rowMain2{
+    background: url("../images/three.jpg") no-repeat center;
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+}
