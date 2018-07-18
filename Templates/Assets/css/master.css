@@ -1,12 +1,23 @@
 html, body{
   margin: 0;
   padding: 0;
-  color: white;
 }
 
 header{
   width: 100%;
   height: 60px;
+  background-color: black;
+  color: white;
+}
+
+.testLogo{
+  float: left;
+  width: calc((100%)/6);
+  text-align: center;
+}
+
+.navbar{
+  display: block;
 }
 
 ul{
@@ -19,12 +30,12 @@ ul{
 
 ul li{
   float: left;
-  width: calc((100%-20px)/5);
+  width: calc((100%-20px)/6);
   height: 100%;
   background-color: black;
-  opacity: .8;
   line-height: 60px;
   text-align: center;
+  transition: background-color 1s;
 }
 
 ul li a{
@@ -33,6 +44,14 @@ ul li a{
 }
 
 ul li:hover{
+  background-color: #00CED1;
+}
+
+ul li:last-child:hover{
+  background-color: black;
+}
+
+ul li ul li:last-child:hover{
   background-color: #00CED1;
 }
 
@@ -49,6 +68,60 @@ ul li .search-icon{
   font-size: 20px;
   line-height: 40px;
 }
-ul li div:hover #searchabaleWidget{
-  display: block;
+
+.container{
+  display: none;
+}
+
+#searchabaleWidget{
+  width: 80%;
+}
+
+@media (max-width: 800px){
+  .container {
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #fff;
+      margin: 6px 0;
+      transition: 0.4s;
+  }
+
+  .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .change .bar2 {opacity: 0;}
+
+  .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  ul.navbar{
+    display: none;
+  }
+
+  .navbar.responsive{
+    display: block;
+  }
+
+  ul li{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  ul li ul li{
+    background-color: white;
+    color: black;
+    position: relative;
+  }
 }
