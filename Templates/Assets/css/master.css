@@ -1,127 +1,75 @@
-html, body{
-  margin: 0;
-  padding: 0;
-}
+/* html document reference */
+html, body{ margin: 0;  padding: 0; }
 
-header{
-  width: 100%;
-  height: 60px;
-  background-color: black;
-  color: white;
-}
+header{ width: 100%;  height: 60px; background-color: black;  color: white; }
 
-.testLogo{
-  float: left;
-  width: calc((100%)/6);
-  text-align: center;
-}
+.testLogo{ float: left; width: calc((100%)/6); text-align: center; }
 
-.navbar{
-  display: block;
-}
+#care{ width: calc((100%)/6); text-align: center; float: right; line-height: 60px; }
 
-ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  width: 100%;
-  height: 100%;
-}
+.navbar{ display: block; width: calc((100%)/1.5); float: left; }
 
-ul li{
-  float: left;
-  width: calc((100%-20px)/6);
-  height: 100%;
-  background-color: black;
-  line-height: 60px;
-  text-align: center;
-  transition: background-color 1s;
-}
+ul{ margin: 0; padding: 0; list-style: none; width: 100%; height: 100%; }
 
-ul li a{
-  text-decoration: none;
-  cursor: pointer;
-}
+ul li{ float: left; width: calc((100%-20px)/4); height: 100%; background-color: black;
+  line-height: 60px; text-align: center; transition: background-color 1s; }
 
-ul li:hover{
-  background-color: #00CED1;
-}
+ul li a{  text-decoration: none;  cursor: pointer;  }
 
-ul li:last-child:hover{
-  background-color: black;
-}
+ul li:hover{  background-color: #00CED1;  }
 
-ul li ul li:last-child:hover{
-  background-color: #00CED1;
-}
+ul li ul li{  width: 100%;  display: none; }
 
-ul li ul li{
-  width: 100%;
-  display: none;
-}
+ul li:hover ul li{  display: block; }
 
-ul li:hover ul li{
-  display: block;
-}
+ul li .search-icon{  font-size: 20px; line-height: 40px;  }
 
-ul li .search-icon{
-  font-size: 20px;
-  line-height: 40px;
-}
+.container{ display: none; }
 
-.container{
-  display: none;
-}
+#searchabaleWidget{ width: 80%; }
 
-#searchabaleWidget{
-  width: 80%;
-}
+#care button{ display: none; }
 
 @media (max-width: 800px){
-  .container {
-    float: right;
-    display: inline-block;
-    cursor: pointer;
-    margin: 10px;
-  }
+  .testLogo{ position: absolute; left: 32%; }
 
-  .bar1, .bar2, .bar3 {
-      width: 35px;
-      height: 5px;
-      background-color: #fff;
-      margin: 6px 0;
-      transition: 0.4s;
-  }
+  .container { float: left; display: inline-block; cursor: pointer; margin: 10px; position: absolute; }
 
-  .change .bar1 {
-      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-      transform: rotate(-45deg) translate(-9px, 6px);
-  }
+  .container, #care, .testLogo{ width: calc((100%-30px)/3); }
 
-  .change .bar2 {opacity: 0;}
+  #care{ text-align: -webkit-right; }
 
-  .change .bar3 {
-      -webkit-transform: rotate(45deg) translate(-8px, -8px);
-      transform: rotate(45deg) translate(-8px, -8px);
-  }
+  #care button{ margin-right: 10px; margin-top: 10px; display: block; background-color: black; color: white; font-size: 1.7em; }
 
-  ul.navbar{
-    display: none;
-  }
+  .dropdown{ display: none; background: black; top: 60px; width: 100%; border-top: 2px solid grey; position: absolute; left: 0; text-align: center; }
 
-  .navbar.responsive{
-    display: block;
-  }
+  .dropdown.sys{ display: block; }
 
-  ul li{
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+  .bar1, .bar2, .bar3 { width: 35px; height: 5px; background-color: #fff; margin: 6px 0; transition: 0.4s; }
 
-  ul li ul li{
-    background-color: white;
-    color: black;
-    position: relative;
-  }
+  .change .bar1 { -webkit-transform: rotate(-45deg) translate(-9px, 6px); transform: rotate(-45deg) translate(-9px, 6px); }
+
+  .change .bar2 { opacity: 0;}
+
+  .change .bar3 { -webkit-transform: rotate(45deg) translate(-8px, -8px); transform: rotate(45deg) translate(-8px, -8px); }
+
+  ul.navbar{ display: none; width: 100%; top: 60px; position: absolute; border-top: 2px solid grey;}
+
+  .navbar.responsive{ display: block; }
+
+  ul li{ width: 100%; height: auto; display: block; }
+
+  ul li ul li{ background-color: white; color: black; position: relative; }
+}
+
+@media (min-width:601px) and (max-width:800px){
+  .testLogo{ left: 20%; }
+
+  #care button{ display: none; }
+
+  .dropdown{ display: block; background: black; top: 0; border-top: none; position: relative; text-align: center; }
+
+  ul li{ float: left; width: calc((100%-20px)/4); }
+
+  ul li ul li{ background-color: black; color: white; position: relative; }
 }
